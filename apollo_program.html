@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Launch: Apollo GPU cluster — Program</title>
+<style>
+  :root {
+    --ochre: #E64626;
+    --charcoal: #414141;
+    --sandstone: #FCEDE2;
+    --black: #000000;
+    --white: #FFFFFF;
+    --dark-header: #414141;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--white);
+    color: var(--charcoal);
+    margin: 0;
+    padding: 40px 20px;
+  }
+
+  .page {
+    max-width: 820px;
+    margin: 0 auto;
+    background: var(--white);
+  }
+
+  .banner {
+    width: 100%;
+    max-width: 820px;
+    display: block;
+    margin: 0 auto 24px auto;
+    border-radius: 2px;
+  }
+
+  .masthead {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: var(--charcoal);
+    margin-bottom: 18px;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 30px;
+    color: var(--black);
+    margin: 0 0 2px 0;
+    font-weight: bold;
+  }
+
+  h1 .subtitle {
+    display: block;
+    font-weight: normal;
+    font-size: 26px;
+    color: var(--black);
+    margin-top: 2px;
+  }
+
+  .program {
+    margin-top: 28px;
+    border: 1px solid #e3d6cb;
+  }
+
+  .section-header {
+    background: var(--dark-header);
+    color: var(--white);
+    font-weight: bold;
+    padding: 8px 14px;
+    font-size: 15px;
+  }
+
+  .row {
+    background: var(--sandstone);
+    padding: 8px 14px;
+    border-bottom: 1px solid #f0e2d6;
+  }
+
+  .row .title {
+    font-weight: bold;
+    color: var(--black);
+    font-size: 15px;
+    display: block;
+  }
+
+  .row .speaker {
+    color: var(--charcoal);
+    font-size: 14px;
+    display: block;
+  }
+
+  .row.numbered .title::before {
+    content: "";
+  }
+
+  .highlight {
+    background: var(--ochre);
+    color: var(--white);
+    font-weight: bold;
+    padding: 8px 14px;
+    font-size: 15px;
+  }
+
+  footer {
+    margin-top: 24px;
+    font-size: 11px;
+    color: #999;
+  }
+
+  .more-info {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--charcoal);
+    text-align: center;
+  }
+
+  .more-info a {
+    color: var(--ochre);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .more-info a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <img class="banner" src="apollo_hero.jpeg" alt="Apollo launch banner — a desert landscape at dawn with a glowing path leading to a rising sun">
+    <div class="masthead">The University of Sydney</div>
+    <h1>Launch: Apollo GPU cluster<span class="subtitle">— Program</span></h1>
+
+    <div class="program">
+      <div class="section-header">10.15am: Apollo in context: Research computing &amp; AI at Sydney</div>
+
+      <div class="row">
+        <span class="title">Welcome / Acknowledgement of Country</span>
+        <span class="speaker">Tim Dixon, Program Director</span>
+      </div>
+      <div class="row">
+        <span class="title">Opening: The past and present of research computing at Sydney</span>
+        <span class="speaker">Professor Mark Scott, Vice Chancellor and President</span>
+      </div>
+      <div class="row">
+        <span class="title">Introduction to Sydney Research Cloud</span>
+        <span class="speaker">Professor Simon Ringer, Pro-Vice-Chancellor (Research Infrastructure)</span>
+      </div>
+      <div class="row">
+        <span class="title">NVIDIA DGX platform: Defining the future of AI infrastructure</span>
+        <span class="speaker">Dr Wei Fang, Senior Solutions Architect (ANZ), NVIDIA</span>
+      </div>
+      <div class="row">
+        <span class="title">Apollo: An Engineering Perspective</span>
+        <span class="speaker">Professor Hesham El Gamal, Dean, Faculty of Engineering</span>
+      </div>
+      <div class="row">
+        <span class="title">Digital Sydney, Research and AI</span>
+        <span class="speaker">Josh Roberts, Executive Director, Digital Sydney</span>
+      </div>
+
+      <div class="section-header">10.35am: Introduction to Apollo + Research use cases</div>
+
+      <div class="row">
+        <span class="title">Meet Apollo</span>
+        <span class="speaker">Michael Lynch, Sydney Informatics Hub</span>
+      </div>
+      <div class="row">
+        <span class="title">#1: Neuroscience – Faculty of Medicine and Health</span>
+        <span class="speaker">A/Prof. Chenyu Tim Wang</span>
+      </div>
+      <div class="row">
+        <span class="title">#2: Music – Sydney Conservatorium of Music</span>
+        <span class="speaker">Dr Benjamin Carey</span>
+      </div>
+      <div class="row">
+        <span class="title">#3: Life Sciences – Faculty of Science</span>
+        <span class="speaker">Professor Joel Mackay &amp; Lihua Yang</span>
+      </div>
+      <div class="row">
+        <span class="title">#4: Humanities – Faculty of Arts &amp; Social Sciences</span>
+        <span class="speaker">Dr Francesco Bailo</span>
+      </div>
+      <div class="row">
+        <span class="title">#5: Photonics – Faculty of Engineering</span>
+        <span class="speaker">Professor Xiaoke Yi</span>
+      </div>
+      <div class="row">
+        <span class="title">#6: Robotics – Faculty of Engineering</span>
+        <span class="speaker">Professor Ian Manchester</span>
+      </div>
+      <div class="row">
+        <span class="title">#7: Biomedical Engineering – Faculty of Engineering</span>
+        <span class="speaker">Dr Helen Zhao</span>
+      </div>
+      <div class="row">
+        <span class="title">Closing: The future of research computing at Sydney</span>
+        <span class="speaker">David Thodey, Chancellor</span>
+      </div>
+
+      <div class="highlight">11.20 – 11.45am: Morning tea</div>
+    </div>
+
+    <p class="more-info">More info on the Apollo GPU cluster: <a href="https://sih.tools/gpu/docs">sih.tools/gpu/docs</a></p>
+  </div>
+</body>
+</html>
